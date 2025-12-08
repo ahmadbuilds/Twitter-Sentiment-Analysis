@@ -35,7 +35,7 @@ docker build -t twitter-sentiment-backend:latest .
 - **Run container (mount local model checkpoint if needed)**:
 
 ```powershell
-docker run --rm -p 8080:8080 -e PORT=8080 -v "C:\path\to\local\Models\chunk_model2:/app/Models/chunk_model2" twitter-sentiment-backend:latest
+docker run --rm -p 8080:8080 -e PORT=8080 -v "<path>:/app/Models/chunk_model2" twitter-sentiment-backend:latest
 ```
 
 - **Test the API**:
@@ -81,7 +81,7 @@ cd Twitter-Sentiment/backend
 ```powershell
 docker build -t twitter-sentiment-backend:latest .
 # If your model checkpoints are stored locally, mount them into the container:
-docker run --rm -p 8080:8080 -e PORT=8080 -v "C:\path\to\Models\chunk_model2:/app/Models/chunk_model2" twitter-sentiment-backend:latest
+docker run --rm -p 8080:8080 -e PORT=8080 -v "<path>:/app/Models/chunk_model2" twitter-sentiment-backend:latest
 ```
 
 3. Test the inference endpoint:
@@ -377,7 +377,7 @@ docker build -t twitter-sentiment-backend:latest .
 3. Run container and mount models at runtime (if not baked into image):
 
 ```powershell
-docker run --rm -p 8080:8080 -e PORT=8080 -v "C:\path\to\Models\chunk_model2:/app/Models/chunk_model2" twitter-sentiment-backend:latest
+docker run --rm -p 8080:8080 -e PORT=8080 -v "<path>:/app/Models/chunk_model2" twitter-sentiment-backend:latest
 ```
 
 4. Validate endpoint with a curl command (example):
