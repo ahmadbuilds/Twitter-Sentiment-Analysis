@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+pydantic
+tensorflow==2.13.4
+transformers
+scikit-learn
+pandas
+matplotlib
+seaborn
