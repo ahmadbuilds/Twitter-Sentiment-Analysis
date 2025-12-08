@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { Send, TrendingUp, TrendingDown } from 'lucide-react';
 
 type SentimentResult = {
-  sentiment: 'Positive' | 'Negative';
+  sentiment: 'positive' | 'negative';
   confidence: number;
 };
 
@@ -112,13 +112,13 @@ export default function SentimentAnalyzer() {
           {result && (
             <div className="mt-6">
               <div className={`rounded-xl p-6 border ${
-                result.sentiment == 'positive' 
+                result.sentiment === 'positive' 
                   ? 'bg-emerald-950/30 border-emerald-700' 
                   : 'bg-rose-950/30 border-rose-700'
               }`}>
                 <div className="flex items-center justify-between mb-4">
                   <div className="flex items-center gap-3">
-                    {result.sentiment == 'positive' ? (
+                    {result.sentiment === 'positive' ? (
                       <TrendingUp className="w-8 h-8 text-emerald-400" />
                     ) : (
                       <TrendingDown className="w-8 h-8 text-rose-400" />
