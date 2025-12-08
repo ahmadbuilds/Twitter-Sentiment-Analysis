@@ -15,7 +15,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-model=TFDistilBertForSequenceClassification.from_pretrained('./Models/chunk_model1')
+model=TFDistilBertForSequenceClassification.from_pretrained('./Models/chunk_model2')
 tokenizer=utils.load_tokenizer('distilbert-base-uncased')
 
 #Pydantic model for tweet input
