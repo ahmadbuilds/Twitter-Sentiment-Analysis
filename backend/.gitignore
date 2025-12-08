@@ -1,6 +1,2 @@
 /Notebooks/__pycache__/
 /Data/processed/Chunks/
-/Trained_weights/
-/Models/chunk_model1/
-/Notebooks/DistillBert_Model.ipynb
-/Notebooks/utils.py
