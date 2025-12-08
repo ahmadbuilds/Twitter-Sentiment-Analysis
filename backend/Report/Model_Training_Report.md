@@ -34,23 +34,23 @@
 
 Training Loss vs. Validation Loss
 
-![Training Loss vs Validation Loss](Figures/Training Loss vs. Validation Loss.jpeg)
+(Figures/Training Loss vs. Validation Loss.jpeg)
 
 Precision-Recall Curve
 
-![Precision Recall Curve](Figures/Precision Recall Curve.jpeg)
+(Figures/Precision Recall Curve.jpeg)
 
 F1 Score Curve
 
-![F1 Score Curve](Figures/F1 Score Curve.jpeg)
+(Figures/F1 Score Curve.jpeg)
 
 Confusion Matrix
 
-![Confusion Matrix](Figures/Confusion Matrix.jpeg)
+(Figures/Confusion Matrix.jpeg)
 
 Sample model outputs / prediction snapshot
 
-![Sample Output](Figures/output.png)
+(Figures/output.png)
 
 - **Interpretation guidance**: use the precision-recall and F1 plots to choose an operating threshold if you wish to prioritize precision or recall. The confusion matrix provides an at-a-glance view of common error types (false positives vs false negatives).
 
@@ -92,9 +92,9 @@ tokenizer.push_to_hub('your-username/twitter-sentiment-distilbert')
 
 **Limitations & Caveats**
 
-- **Hardware**: current images / requirements assume CPU-only or standard x86 Linux containers. If you need GPU acceleration, install a CUDA-enabled TensorFlow build and use GPU-enabled base images — Hugging Face Spaces has specific guidance for GPU-backed Spaces.
+- **Hardware**: current images / requirements assume CPU-only or standard x86 Linux containers. If you need GPU acceleration, install a CUDA-enabled TensorFlow build and use GPU-enabled base images  Hugging Face Spaces has specific guidance for GPU-backed Spaces.
 - **Model size & repo limits**: large checkpoints may exceed Git or Spaces limits; prefer the Hugging Face Hub or external storage and download at startup.
-- **Missing explicit hyperparameters**: exact training hyperparameters are not embedded in `entry_main.py` or `utils.py` — inspect `Notebooks/DistillBert_Model.ipynb` for the definitive training run settings.
+- **Missing explicit hyperparameters**: exact training hyperparameters are not embedded in `entry_main.py` or `utils.py` inspect `Notebooks/DistillBert_Model.ipynb` for the definitive training run settings.
 
 **Next steps & Recommendations**
 
